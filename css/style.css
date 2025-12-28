@@ -1,0 +1,114 @@
+/* Estilos CSS Puros - Alinhados com a AULA 02 (Estrutura e Tabelas) */
+
+/* ------------------------------------- */
+/* VARIÁVEIS DE CORES PARA FACILITAR */
+/* ------------------------------------- */
+:root {
+    --primary-color: #4F46E5; /* Índigo */
+    --header-bg: #4F46E5;
+    --header-text: white;
+    --holiday-color: #EF4444; /* Vermelho para Feriados */
+    --study-color: #FBBF24; /* Amarelo para Estudo */
+    --personal-color: #60A5FA; /* Azul para Pessoal */
+    --default-border: #D1D5DB; /* Cinza claro */
+    --bg-light: #F9FAFB;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--bg-light);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #1F2937;
+}
+
+/* ------------------------------------- */
+/* LAYOUT PRINCIPAL E CARD DO MÊS */
+/* ------------------------------------- */
+.calendario-container {
+    max-width: 600px; /* Reduzi o max-width para 600px para ficar mais vertical, já que não estão lado a lado */
+    margin: 0 auto;
+    /* ALTERAÇÃO CHAVE AQUI: Removendo display: flex para que os itens fiquem em COLUNA */
+    display: block; 
+    gap: 20px;
+}
+
+.mes-card {
+    background-color: white;
+    border: 1px solid var(--default-border);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%; 
+    /* ALTERAÇÃO CHAVE AQUI: Removendo a regra flexbox e garantindo margem para separação */
+    margin-bottom: 20px; 
+}
+
+/* ------------------------------------- */
+/* ESTRUTURA DA TABELA (Instrução 1: 3 Tabelas) */
+/* ------------------------------------- */
+.calendar-table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed; /* Garante colunas de mesmo tamanho */
+}
+
+.calendar-table th {
+    background-color: var(--header-bg);
+    color: var(--header-text);
+    padding: 10px 5px;
+    font-size: 14px;
+}
+
+.calendar-table td {
+    border: 1px solid var(--default-border);
+    padding: 5px;
+    height: 80px; /* Altura fixa para espaço de anotações */
+    vertical-align: top; /* Alinha o conteúdo ao topo da célula */
+    text-align: left; /* Alinha todo o conteúdo à esquerda por padrão */
+    font-size: 13px;
+}
+
+/* ------------------------------------- */
+/* ESTILIZAÇÃO DOS DIAS E EVENTOS */
+/* ------------------------------------- */
+.day-number {
+    font-weight: bold;
+    display: block;
+    text-align: right; /* Alinha o número do dia no canto superior direito */
+    margin-bottom: 5px;
+    color: #374151;
+}
+
+.outro-mes .day-number {
+    color: var(--default-border); /* Dias esmaecidos */
+}
+
+/* Estilos para as tags de agendamento */
+.event-tag {
+    display: block;
+    margin-top: 3px;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 11px;
+    text-decoration: none;
+    color: black;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+/* Cores específicas dos agendamentos */
+.holiday-tag { background-color: var(--holiday-color); color: white; }
+.study-tag { background-color: var(--study-color); }
+.personal-tag { background-color: var(--personal-color); color: white; }
+
+/* Feriados: Célula com fundo levemente mais claro */
+.feriado-bg {
+    background-color: rgba(239, 68, 68, 0.1); /* 10% de opacidade da cor do feriado */
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Cronograma de 3 Meses (HTML e CSS Básico)</title>
+    <link rel="stylesheet" href="css/style.css">    
+</head>
+<body>
+
+    <header>
+        <h1>Meu Cronograma de 3 Meses</h1>
+        <p style="text-align: center; margin-bottom: 30px; color: #6B7280;">Dezembro 2025 - Fevereiro 2026 (Usando apenas HTML e CSS Básico)</p>
+    </header>
+
+    <div class="calendario-container">
+        
+        <!-- MÊS 1: DEZEMBRO 2025 (Instrução 2) -->
+        <div class="mes-card">
+            <h2 style="margin-top: 0; font-size: 24px;">Dezembro 2025</h2>
+            <table class="calendar-table">
+                <thead>
+                    <tr>
+                        <th>Dom</th><th>Seg</th><th>Ter</th><th>Qua</th><th>Qui</th><th>Sex</th><th>Sáb</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Semana 1 (Começa na Segunda) -->
+                    <tr>
+                        <td class="outro-mes"><span class="day-number">30</span></td>
+                        <td><span class="day-number">1</span>
+                            <a href="#" class="event-tag study-tag" title="Revisão de Módulos (Estudo)">Revisão HTML/CSS</a>
+                        </td>
+                        <td><span class="day-number">2</span></td>
+                        <td><span class="day-number">3</span></td>
+                        <td><span class="day-number">4</span></td>
+                        <td><span class="day-number">5</span></td>
+                        <td><span class="day-number">6</span></td>
+                    </tr>
+                    <!-- Semana 2 -->
+                    <tr>
+                        <td><span class="day-number">7</span></td>
+                        <td><span class="day-number">8</span></td>
+                        <td><span class="day-number">9</span></td>
+                        <td><span class="day-number">10</span></td>
+                        <td><span class="day-number">11</span></td>
+                        <td><span class="day-number">12</span></td>
+                        <td><span class="day-number">13</span>
+                            <span class="event-tag personal-tag" title="Consulta Médica (10h) (Pessoal)">Consulta Médica</span>
+                        </td>
+                    </tr>
+                    <!-- Semana 3 -->
+                    <tr>
+                        <td><span class="day-number">14</span></td>
+                        <td><span class="day-number">15</span></td>
+                        <td><span class="day-number">16</span></td>
+                        <td><span class="day-number">17</span>
+                            <span class="event-tag study-tag" title="Entrega de Projeto Final (Estudo)">Entrega Projeto</span>
+                        </td>
+                        <td><span class="day-number">18</span></td>
+                        <td><span class="day-number">19</span></td>
+                        <td><span class="day-number">20</span></td>
+                    </tr>
+                    <!-- Semana 4 (Feriado: Instrução 3) -->
+                    <tr>
+                        <td><span class="day-number">21</span></td>
+                        <td><span class="day-number">22</span></td>
+                        <td><span class="day-number">23</span></td>
+                        <td><span class="day-number">24</span>
+                            <span class="event-tag personal-tag" title="Véspera de Natal (Pessoal)">Véspera de Natal</span>
+                        </td>
+                        <td class="feriado-bg"><span class="day-number" style="color: var(--holiday-color);">25</span>
+                            <span class="event-tag holiday-tag" title="Natal (Feriado Nacional)">Natal (Feriado)</span>
+                        </td>
+                        <td><span class="day-number">26</span></td>
+                        <td><span class="day-number">27</span></td>
+                    </tr>
+                    <!-- Semana 5 -->
+                    <tr>
+                        <td><span class="day-number">28</span></td>
+                        <td><span class="day-number">29</span></td>
+                        <td><span class="day-number">30</span></td>
+                        <td><span class="day-number">31</span>
+                            <a href="#detalhe-reveillon" class="event-tag personal-tag" title="Link interno para Reveillon (Pessoal)">Reveillon (Link)</a>
+                        </td>
+                        <td class="outro-mes"><span class="day-number">1</span></td>
+                        <td class="outro-mes"><span class="day-number">2</span></td>
+                        <td class="outro-mes"><span class="day-number">3</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- MÊS 2: JANEIRO 2026 -->
+        <div class="mes-card">
+            <h2 style="margin-top: 0; font-size: 24px;">Janeiro 2026</h2>
+            <table class="calendar-table">
+                <thead>
+                    <tr>
+                        <th>Dom</th><th>Seg</th><th>Ter</th><th>Qua</th><th>Qui</th><th>Sex</th><th>Sáb</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Semana 1 (Feriado: Instrução 3) -->
+                    <tr>
+                        <td class="outro-mes"><span class="day-number">28</span></td>
+                        <td class="outro-mes"><span class="day-number">29</span></td>
+                        <td class="outro-mes"><span class="day-number">30</span></td>
+                        <td class="outro-mes"><span class="day-number">31</span></td>
+                        <td class="feriado-bg"><span class="day-number" style="color: var(--holiday-color);">1</span>
+                            <span class="event-tag holiday-tag" title="Confraternização Universal (Feriado Nacional)">Ano Novo</span>
+                        </td>
+                        <td><span class="day-number">2</span></td>
+                        <td><span class="day-number">3</span>
+                            <a href="https://github.com/seu-usuario/cronograma-anual" target="_blank" class="event-tag study-tag" title="Link externo para o Cronograma Anual no GitHub">Planejamento (Link Externo)</a>
+                        </td>
+                    </tr>
+                    <!-- Semana 2 -->
+                    <tr>
+                        <td><span class="day-number">4</span></td>
+                        <td><span class="day-number">5</span></td>
+                        <td><span class="day-number">6</span></td>
+                        <td><span class="day-number">7</span></td>
+                        <td><span class="day-number">8</span></td>
+                        <td><span class="day-number">9</span></td>
+                        <td><span class="day-number">10</span></td>
+                    </tr>
+                    <!-- Semana 3 -->
+                    <tr>
+                        <td><span class="day-number">11</span></td>
+                        <td><span class="day-number">12</span>
+                            <span class="event-tag study-tag" title="Início das Aulas do Novo Módulo (Estudo)">Início das Aulas</span>
+                        </td>
+                        <td><span class="day-number">13</span></td>
+                        <td><span class="day-number">14</span></td>
+                        <td><span class="day-number">15</span></td>
+                        <td><span class="day-number">16</span></td>
+                        <td><span class="day-number">17</span></td>
+                    </tr>
+                    <!-- Semana 4 -->
+                    <tr>
+                        <td><span class="day-number">18</span></td>
+                        <td><span class="day-number">19</span></td>
+                        <td><span class="day-number">20</span></td>
+                        <td><span class="day-number">21</span></td>
+                        <td><span class="day-number">22</span></td>
+                        <td><span class="day-number">23</span>
+                        </td>
+                        <td><span class="day-number">24</span></td>
+                    </tr>
+                    <!-- Semana 5 -->
+                    <tr>
+                        <td><span class="day-number">25</span></td>
+                        <td><span class="day-number">26</span></td>
+                        <td><span class="day-number">27</span></td>
+                        <td><span class="day-number">28</span></td>
+                        <td><span class="day-number">29</span></td>
+                        <td><span class="day-number">30</span></td>
+                        <td><span class="day-number">31</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- MÊS 3: FEVEREIRO 2026 -->
+        <div class="mes-card">
+            <h2 style="margin-top: 0; font-size: 24px;">Fevereiro 2026</h2>
+            <table class="calendar-table">
+                <thead>
+                    <tr>
+                        <th>Dom</th><th>Seg</th><th>Ter</th><th>Qua</th><th>Qui</th><th>Sex</th><th>Sáb</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Semana 1 (Começa no Domingo) -->
+                    <tr>
+                        <td><span class="day-number">1</span></td>
+                        <td><span class="day-number">2</span></td>
+                        <td><span class="day-number">3</span></td>
+                        <td><span class="day-number">4</span></td>
+                        <td><span class="day-number">5</span></td>
+                        <td><span class="day-number">6</span></td>
+                        <td><span class="day-number">7</span></td>
+                    </tr>
+                    <!-- Semana 2 (Feriado: Instrução 3) -->
+                    <tr>
+                        <td><span class="day-number">8</span></td>
+                        <td><span class="day-number">9</span>
+                            <span class="event-tag personal-tag" title="Início do Carnaval (Ponto Facultativo)">Carnaval (Início)</span>
+                        </td>
+                        <td class="feriado-bg"><span class="day-number" style="color: var(--holiday-color);">10</span>
+                            <span class="event-tag holiday-tag" title="Feriado de Carnaval - Terça-feira Gorda">Carnaval (Feriado)</span>
+                        </td>
+                        <td class="feriado-bg"><span class="day-number" style="color: var(--holiday-color);">11</span>
+                            <span class="event-tag holiday-tag" title="Feriado de Carnaval - Quarta-feira de Cinzas">Cinzas (Feriado)</span>
+                        </td>
+                        <td><span class="day-number">12</span></td>
+                        <td><span class="day-number">13</span></td>
+                        <td><span class="day-number">14</span></td>
+                    </tr>
+                    <!-- Semana 3 -->
+                    <tr>
+                        <td><span class="day-number">15</span></td>
+                        <td><span class="day-number">16</span></td>
+                        <td><span class="day-number">17</span>
+                            <span class="event-tag study-tag" title="Avaliação Intermediária (Estudo)">Avaliação</span>
+                        </td>
+                        <td><span class="day-number">18</span></td>
+                        <td><span class="day-number">19</span></td>
+                        <td><span class="day-number">20</span></td>
+                        <td><span class="day-number">21</span></td>
+                    </tr>
+                    <!-- Semana 4 -->
+                    <tr>
+                        <td><span class="day-number">22</span></td>
+                        <td><span class="day-number">23</span></td>
+                        <td><span class="day-number">24</span></td>
+                        <td><span class="day-number">25</span></td>
+                        <td><span class="day-number">26</span></td>
+                        <td><span class="day-number">27</span></td>
+                        <td><span class="day-number">28</span></td>
+                    </tr>
+                    <!-- Dias do mês seguinte (Março) -->
+                    <tr>
+                        <td class="outro-mes"><span class="day-number">1</span></td>
+                        <td class="outro-mes"><span class="day-number">2</span></td>
+                        <td class="outro-mes"><span class="day-number">3</span></td>
+                        <td class="outro-mes"><span class="day-number">4</span></td>
+                        <td class="outro-mes"><span class="day-number">5</span></td>
+                        <td class="outro-mes"><span class="day-number">6</span></td>
+                        <td class="outro-mes"><span class="day-number">7</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <!-- Exemplo de Link Interno para Observação -->
+    <div id="detalhe-reveillon" style="max-width: 1200px; margin: 30px auto; padding: 15px; background-color: var(--primary-color); color: white; border-radius: 8px;">
+        <h3 style="margin: 0; font-size: 18px;">Detalhe do Agendamento (31 de Dezembro)</h3>
+        <p style="margin-top: 5px;">Este é um link interno! Você pode usar este espaço para detalhar um evento específico ou incluir uma lista de afazeres (usando as tags (ul) ou (ol) da Aula 02).</p>
+    </div>
+
+</body>
+</html>
